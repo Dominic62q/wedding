@@ -10,10 +10,10 @@ function App() {
   return (
     <div className="app-container">
       <Hero />
-      <GiftDonation />
       <Details />
       <Colors />
       <RSVP />
+      <GiftDonation />
       <Scripture />
     </div>
   );
