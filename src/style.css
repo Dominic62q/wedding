@@ -747,13 +747,19 @@ p {
     display: none;
   }
 
+  html,
+  body {
+    overflow-y: auto;
+  }
+
   body {
     background: linear-gradient(
       180deg,
       rgba(246, 239, 226, 0.2) 0%,
       rgba(246, 239, 226, 0.16) 100%
     );
-    overscroll-behavior-y: none;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
   }
 
   #root::before {
@@ -766,9 +772,6 @@ p {
     min-height: 100vh;
     z-index: -1;
     pointer-events: none;
-    transform: translateZ(0);
-    backface-visibility: hidden;
-    will-change: transform;
     background:
       linear-gradient(
         180deg,
