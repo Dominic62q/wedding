@@ -1,4 +1,5 @@
 import Hero from "./components/Hero";
+import GiftDonation from "./components/GiftDonation";
 import Details from "./components/Details";
 import Colors from "./components/Colors";
 import RSVP from "./components/RSVP";
@@ -9,6 +10,7 @@ function App() {
   return (
     <div className="app-container">
       <Hero />
+      <GiftDonation />
       <Details />
       <Colors />
       <RSVP />
