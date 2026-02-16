@@ -593,8 +593,9 @@ p {
 .rsvp-subtitle {
   max-width: 460px;
   margin: 0 auto 34px;
-  font-size: 1.14rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--lilac-dark);
 }
 
 .rsvp-row {
@@ -677,19 +678,6 @@ p {
   font-family: var(--font-heading);
   font-weight: 700;
   color: rgba(255, 255, 255, 0.97);
-}
-
-.scripture-canopy {
-  margin: 14px auto 0;
-  padding: 12px 16px;
-  max-width: 560px;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.24);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.09));
-  color: rgba(255, 255, 255, 0.96);
-  font-size: 1rem;
-  line-height: 1.5;
-  font-weight: 600;
 }
 
 .scripture-divider {
@@ -996,13 +984,6 @@ p {
   .scripture-quote {
     font-size: clamp(1.04rem, 4.9vw, 1.3rem);
     line-height: 1.6;
-  }
-
-  .scripture-canopy {
-    margin-top: 12px;
-    padding: 10px 12px;
-    font-size: 0.9rem;
-    line-height: 1.45;
   }
 
   .scripture-reference {
