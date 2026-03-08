@@ -1211,9 +1211,9 @@ p {
   }
 
   .hero-title {
-    font-size: clamp(1.5rem, 7.2vw, 1.95rem);
-    line-height: 1.06;
-    letter-spacing: -0.15px;
+    font-size: clamp(1.8rem, 8.6vw, 2.35rem);
+    line-height: 1.04;
+    letter-spacing: -0.2px;
   }
 
   .hero-logo {
@@ -1563,8 +1563,8 @@ p {
   }
 
   .hero-title {
-    font-size: clamp(1.46rem, 8.1vw, 1.78rem);
-    letter-spacing: -0.25px;
+    font-size: clamp(1.68rem, 8.8vw, 2rem);
+    letter-spacing: -0.22px;
   }
 
   .hero-logo {
