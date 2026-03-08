@@ -15,10 +15,6 @@ export default function Hero() {
 
       <h3 className="hero-kicker">A Celebration of Love, Faith & Strength</h3>
 
-      <a href="#invitation" className="btn hero-cta">
-        View Invitation
-      </a>
-
       <div className="scroll-cue" aria-hidden="true">
         {"\u2304"}
       </div>
