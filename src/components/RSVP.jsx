@@ -2,13 +2,13 @@ export default function RSVP() {
   const contacts = [
     { name: "Rockson", number: "0555198180" },
     { name: "Ernest", number: "0247867048" },
-    { name: "Empress", number: "0262002180" },
+    { name: "Phylis", number: "0509603333" },
   ];
 
   return (
     <section className="section" id="rsvp">
       <h2>R.S.V.P</h2>
-      <p className="rsvp-subtitle">Kindly confirm your presence by calling our coordinators:</p>
+      <p className="rsvp-subtitle">Kindly confirm your presence by calling our RSVP contacts:</p>
 
       <div className="card rsvp-card" style={{ padding: "0" }}>
         {contacts.map((contact, index) => (
@@ -19,7 +19,7 @@ export default function RSVP() {
           >
             <div style={{ textAlign: "left" }}>
               <div className="rsvp-name">{contact.name}</div>
-              <div className="rsvp-role">Coordinator</div>
+              <div className="rsvp-role">RSVP</div>
             </div>
 
             <a href={`tel:${contact.number}`} className="rsvp-call" aria-label={`Call ${contact.name}`}>

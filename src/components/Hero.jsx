@@ -7,14 +7,16 @@ export default function Hero() {
         <img src={logo} className="hero-logo" alt="Wedding logo" />
       </div>
 
+      <p className="section-kicker hero-meta">Saturday, 28 March 2026</p>
+
       <h1 className="hero-title">
         Bright <span>&</span> Deborah
       </h1>
 
       <h3 className="hero-kicker">A Celebration of Love, Faith & Strength</h3>
 
-      <a href="#rsvp" className="btn hero-cta">
-        Celebrate With Us
+      <a href="#invitation" className="btn hero-cta">
+        View Invitation
       </a>
 
       <div className="scroll-cue" aria-hidden="true">

@@ -9,14 +9,18 @@ export default function Details() {
         </div>
 
         <p className="venue-eyebrow">Ceremony Location</p>
-        <h3 className="venue-title">PROVE JESUS ALIVE MINISTRIES</h3>
+        <h3 className="venue-title">PROVE JESUS ALIVE MINISTRY</h3>
 
-        <p className="venue-location">Taifa, Accra, Ghana</p>
+        <p className="venue-location">Adjacent Ebenezer School, Taifa, Accra, Ghana</p>
 
         <div className="venue-meta-grid">
           <div className="venue-meta-item">
             <span className="venue-meta-label">Date</span>
             <span className="venue-meta-value">Saturday, 28 March 2026</span>
+          </div>
+          <div className="venue-meta-item">
+            <span className="venue-meta-label">Time</span>
+            <span className="venue-meta-value">11:00 AM</span>
           </div>
           <div className="venue-meta-item">
             <span className="venue-meta-label">Occasion</span>
@@ -31,14 +35,14 @@ export default function Details() {
             {"\uD83D\uDCC5"}
           </span>
           <div className="venue-time-copy">
-            <span className="venue-date">A joyful service in worship and love</span>
+            <span className="venue-date">Please join us at 11:00 AM for the wedding ceremony.</span>
           </div>
         </div>
 
         <br />
         <a
           className="btn btn-outline venue-btn"
-          href="https://www.google.com/maps/search/?api=1&query=Prove+Jesus+Alive+Ministries+Taifa+Accra+Ghana"
+          href="https://www.google.com/maps/search/?api=1&query=Prove+Jesus+Alive+Ministry+Adjacent+Ebenezer+School+Taifa+Accra+Ghana"
           target="_blank"
           rel="noreferrer"
         >

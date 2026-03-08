@@ -114,7 +114,7 @@ a {
 .section {
   position: relative;
   width: 100%;
-  padding: 96px 20px;
+  padding: 76px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -127,6 +127,15 @@ a {
   z-index: 1;
 }
 
+.section-kicker {
+  margin: 0 0 10px;
+  color: rgba(61, 103, 136, 0.82);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+}
+
 h1,
 h2,
 h3 {
@@ -136,28 +145,28 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(2.9rem, 7.9vw, 5.2rem);
-  line-height: 1.05;
+  font-size: clamp(2.5rem, 6.8vw, 4.3rem);
+  line-height: 1.08;
   font-weight: 700;
 }
 
 h2 {
-  font-size: clamp(2.3rem, 6vw, 3.3rem);
-  margin-bottom: 24px;
+  font-size: clamp(1.9rem, 4.8vw, 2.7rem);
+  margin-bottom: 18px;
   letter-spacing: 0.3px;
   font-weight: 700;
 }
 
 h3 {
-  font-size: clamp(1.55rem, 3.6vw, 2.1rem);
-  margin-bottom: 12px;
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  margin-bottom: 10px;
   font-weight: 700;
 }
 
 p {
   margin: 0 0 15px;
   color: var(--text-light);
-  font-size: clamp(1.08rem, 2.1vw, 1.2rem);
+  font-size: clamp(0.98rem, 1.6vw, 1.08rem);
   font-weight: 600;
 }
 
@@ -165,10 +174,10 @@ p {
   position: relative;
   isolation: isolate;
   width: 100%;
-  max-width: 560px;
+  max-width: 540px;
   margin: 10px auto;
-  padding: 46px 42px;
-  border-radius: 24px;
+  padding: 36px 30px;
+  border-radius: 22px;
   background:
     linear-gradient(165deg, rgba(255, 255, 255, 0.86), rgba(255, 255, 255, 0.68)),
     rgba(255, 255, 255, 0.74);
@@ -219,12 +228,12 @@ p {
 .btn {
   display: inline-block;
   margin: 10px;
-  padding: 15px 36px;
+  padding: 13px 28px;
   border: 0;
   border-radius: 14px;
   text-decoration: none;
   font-weight: 800;
-  font-size: 1.08rem;
+  font-size: 0.98rem;
   letter-spacing: 0.3px;
   cursor: pointer;
   color: white;
@@ -253,15 +262,15 @@ p {
 }
 
 .hero-section {
-  min-height: 92vh;
+  min-height: 68vh;
   justify-content: center;
   background:
-    radial-gradient(circle at 50% 7%, rgba(126, 162, 191, 0.2), transparent 48%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.36), rgba(255, 255, 255, 0.08));
+    radial-gradient(circle at 50% 7%, rgba(126, 162, 191, 0.16), transparent 46%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.26), rgba(255, 255, 255, 0.06));
 }
 
 .hero-logo-wrap {
-  margin-bottom: 28px;
+  margin-bottom: 20px;
   padding: 0;
   border-radius: 0;
   background: transparent;
@@ -269,7 +278,7 @@ p {
 }
 
 .hero-logo {
-  width: clamp(210px, 46vw, 440px);
+  width: clamp(180px, 34vw, 300px);
   display: block;
   mix-blend-mode: normal;
 }
@@ -281,16 +290,20 @@ p {
 }
 
 .hero-kicker {
-  margin-bottom: 14px;
+  margin-bottom: 10px;
   color: var(--sage-deep);
-  font-size: clamp(1.1rem, 2.2vw, 1.34rem);
+  font-size: clamp(0.98rem, 1.8vw, 1.14rem);
   font-weight: 700;
   font-style: italic;
-  letter-spacing: 1.1px;
+  letter-spacing: 0.7px;
+}
+
+.hero-meta {
+  margin-bottom: 8px;
 }
 
 .hero-title {
-  margin-bottom: 14px;
+  margin-bottom: 10px;
   white-space: nowrap;
 }
 
@@ -299,22 +312,361 @@ p {
 }
 
 .hero-cta {
-  margin-top: 8px;
-  margin-bottom: 18px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  background: linear-gradient(120deg, rgba(94, 135, 166, 0.9), rgba(61, 103, 136, 0.9));
+  box-shadow: 0 10px 20px rgba(61, 103, 136, 0.14);
 }
 
 .scroll-cue {
-  margin-top: 40px;
-  opacity: 0.45;
+  margin-top: 28px;
+  opacity: 0.36;
   color: var(--lilac-dark);
-  font-size: 1.95rem;
+  font-size: 1.55rem;
   animation: bounce 2s infinite;
 }
 
 .details-section {
+  padding-top: 62px;
   background:
     radial-gradient(circle at 20% 20%, rgba(126, 162, 191, 0.14), transparent 45%),
     linear-gradient(180deg, rgba(126, 162, 191, 0.05), rgba(255, 255, 255, 0.28));
+}
+
+.invitation-section {
+  padding-top: 34px;
+  padding-bottom: 58px;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(126, 162, 191, 0.16), transparent 32%),
+    radial-gradient(circle at 85% 18%, rgba(94, 135, 166, 0.12), transparent 28%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.2), rgba(246, 239, 226, 0.28));
+}
+
+.invitation-kicker {
+  margin-bottom: 6px;
+}
+
+.invitation-heading {
+  margin-bottom: 18px;
+  font-size: clamp(1.35rem, 2.8vw, 1.8rem);
+  font-weight: 500;
+}
+
+.invitation-card {
+  max-width: 720px;
+  padding: 14px;
+  background:
+    linear-gradient(180deg, rgba(252, 248, 242, 0.7), rgba(244, 238, 229, 0.62)),
+    rgba(255, 255, 255, 0.52);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(164, 136, 105, 0.2);
+  box-shadow:
+    0 16px 38px rgba(78, 67, 56, 0.08),
+    0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+.invitation-shell {
+  position: relative;
+  padding: 30px 30px 20px;
+  border: 1px solid rgba(169, 144, 113, 0.24);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0.12)),
+    radial-gradient(circle at 0% 0%, rgba(193, 171, 223, 0.14), transparent 16%),
+    radial-gradient(circle at 100% 100%, rgba(193, 171, 223, 0.12), transparent 20%),
+    rgba(248, 243, 236, 0.52);
+}
+
+.invitation-shell::before,
+.invitation-shell::after {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  pointer-events: none;
+  border: 1px solid rgba(169, 144, 113, 0.12);
+}
+
+.invitation-shell::after {
+  inset: auto 10px 10px 10px;
+  height: 12px;
+  border: 0;
+  background: linear-gradient(90deg, #0f6f6b, #075a56);
+  box-shadow: inset 0 0 0 2px rgba(183, 142, 56, 0.32);
+}
+
+.invitation-logo-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.invitation-logo {
+  width: min(170px, 34vw);
+  display: block;
+  mix-blend-mode: multiply;
+}
+
+.invitation-tag {
+  margin-bottom: 4px;
+  color: #9a6ba0;
+  font-family: var(--font-heading);
+  font-size: clamp(1rem, 2.2vw, 1.35rem);
+  font-style: italic;
+  font-weight: 700;
+}
+
+.invitation-family,
+.invitation-ampersand,
+.invitation-copy,
+.invitation-venue-line,
+.invitation-rsvp-title,
+.invitation-rsvp-copy {
+  text-transform: uppercase;
+  letter-spacing: 2.1px;
+}
+
+.invitation-family {
+  margin-bottom: 4px;
+  color: #2b3a2f;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.invitation-ampersand {
+  margin-bottom: 4px;
+  color: #574832;
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.invitation-copy {
+  max-width: 520px;
+  margin: 12px auto 20px;
+  color: #354439;
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+.invitation-couple {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+
+.invitation-name-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 0.92;
+}
+
+.invitation-name {
+  color: #0f7b68;
+  font-family: var(--font-heading);
+  font-size: clamp(2.6rem, 6.8vw, 4.8rem);
+  font-style: italic;
+  font-weight: 500;
+}
+
+.invitation-surname {
+  margin-top: 4px;
+  color: #0f7b68;
+  font-size: clamp(1rem, 1.8vw, 1.4rem);
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.invitation-and {
+  color: #7d8b55;
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-style: italic;
+}
+
+.invitation-date-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 12px;
+  margin: 0 auto 22px;
+  max-width: 620px;
+}
+
+.invitation-date-panel {
+  position: relative;
+  padding: 16px 14px;
+}
+
+.invitation-date-panel::before,
+.invitation-date-panel::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  background: rgba(23, 36, 28, 0.78);
+}
+
+.invitation-date-panel::before {
+  left: 0;
+}
+
+.invitation-date-panel::after {
+  right: 0;
+}
+
+.invitation-date-panel-main {
+  min-width: 150px;
+  padding: 0 16px;
+  border-left: 2px solid rgba(23, 36, 28, 0.8);
+  border-right: 2px solid rgba(23, 36, 28, 0.8);
+}
+
+.invitation-date-panel-main::before,
+.invitation-date-panel-main::after {
+  display: none;
+}
+
+.invitation-date-label,
+.invitation-date-month,
+.invitation-date-day,
+.invitation-date-year {
+  display: block;
+  color: #0f7b68;
+  text-transform: uppercase;
+}
+
+.invitation-date-label,
+.invitation-date-month,
+.invitation-date-year {
+  font-size: clamp(0.95rem, 2vw, 1.45rem);
+  font-weight: 500;
+  letter-spacing: 2.8px;
+}
+
+.invitation-date-day {
+  margin: 4px 0;
+  font-size: clamp(1.6rem, 3.8vw, 2.4rem);
+  font-weight: 500;
+  letter-spacing: 2.8px;
+}
+
+.invitation-venue {
+  margin-bottom: 18px;
+}
+
+.invitation-venue-line {
+  margin-bottom: 4px;
+  color: #214937;
+  font-size: clamp(0.86rem, 1.5vw, 1.06rem);
+  font-weight: 700;
+}
+
+.invitation-rsvp {
+  margin-bottom: 18px;
+}
+
+.invitation-rsvp-title {
+  margin-bottom: 6px;
+  color: #574832;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.invitation-rsvp-copy {
+  margin: 0 auto;
+  max-width: 560px;
+  color: #5a4b3a;
+  font-size: 0.76rem;
+  line-height: 1.55;
+}
+
+.invitation-scripture {
+  margin-bottom: 20px;
+}
+
+.invitation-scripture-line {
+  margin-bottom: 4px;
+  color: #1f5d41;
+  font-family: var(--font-heading);
+  font-size: clamp(0.98rem, 1.8vw, 1.22rem);
+  font-style: italic;
+  font-weight: 700;
+}
+
+.invitation-gift-banner {
+  margin: 0 -20px -10px;
+  padding: 8px 16px;
+  color: #f4eadf;
+  font-family: var(--font-heading);
+  font-size: 0.86rem;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  background: linear-gradient(90deg, #0b6a67, #0c5755);
+}
+
+.countdown-section {
+  padding-top: 26px;
+  padding-bottom: 72px;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(126, 162, 191, 0.18), transparent 52%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.18), rgba(230, 239, 246, 0.26));
+}
+
+.countdown-subtitle {
+  max-width: 520px;
+  margin: 0 auto 22px;
+  color: var(--sage-deep);
+  font-size: 0.98rem;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.countdown-card {
+  max-width: 620px;
+}
+
+.countdown-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.countdown-item {
+  padding: 14px 10px;
+  border-radius: 14px;
+  background: rgba(216, 229, 239, 0.42);
+  border: 1px solid rgba(61, 103, 136, 0.18);
+}
+
+.countdown-value {
+  display: block;
+  color: var(--lilac-dark);
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 3.4vw, 2.2rem);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.countdown-label {
+  display: block;
+  margin-top: 7px;
+  color: var(--sage-deep);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.countdown-finished {
+  margin: 0;
+  color: var(--lilac-dark);
+  font-size: 1.18rem;
+  font-weight: 700;
 }
 
 .donation-section {
@@ -348,7 +700,7 @@ p {
 .donation-message {
   margin: 0;
   color: var(--lilac-dark);
-  font-size: clamp(1.14rem, 2.6vw, 1.34rem);
+  font-size: clamp(1rem, 2vw, 1.16rem);
   line-height: 1.45;
   font-weight: 700;
 }
@@ -407,7 +759,7 @@ p {
 }
 
 .venue-card {
-  max-width: 680px;
+  max-width: 620px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.72)),
     rgba(255, 255, 255, 0.74);
@@ -415,7 +767,7 @@ p {
 }
 
 .details-heading {
-  margin-bottom: 42px;
+  margin-bottom: 28px;
 }
 
 .venue-icon {
@@ -443,14 +795,14 @@ p {
 
 .venue-title {
   margin-bottom: 10px;
-  font-size: clamp(1.9rem, 4vw, 2.45rem);
+  font-size: clamp(1.5rem, 3vw, 2rem);
   line-height: 1.15;
 }
 
 .venue-location {
   margin-bottom: 18px;
   color: var(--text-light);
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.2px;
 }
@@ -592,8 +944,8 @@ p {
 
 .rsvp-subtitle {
   max-width: 460px;
-  margin: 0 auto 34px;
-  font-size: 1.2rem;
+  margin: 0 auto 24px;
+  font-size: 1rem;
   font-weight: 800;
   color: var(--lilac-dark);
 }
@@ -602,7 +954,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 32px;
+  padding: 18px 22px;
   background: rgba(255, 255, 255, 0.12);
   transition: background-color 220ms ease;
 }
@@ -613,13 +965,13 @@ p {
 
 .rsvp-name {
   color: var(--lilac-dark);
-  font-size: 1.28rem;
+  font-size: 1.06rem;
   font-weight: 700;
 }
 
 .rsvp-role {
   color: #3f5568;
-  font-size: 1.01rem;
+  font-size: 0.9rem;
   font-weight: 700;
 }
 
@@ -717,15 +1069,15 @@ p {
   }
 
   .section {
-    padding: 82px 18px;
+    padding: 68px 18px;
   }
 
   .hero-section {
-    min-height: 86vh;
+    min-height: 64vh;
   }
 
   .card {
-    padding: 38px 28px;
+    padding: 30px 24px;
   }
 }
 
@@ -770,11 +1122,17 @@ p {
   }
 
   .section {
-    padding: 66px 14px;
+    padding: 52px 14px;
+  }
+
+  .section-kicker {
+    font-size: 0.66rem;
+    letter-spacing: 1.6px;
+    margin-bottom: 8px;
   }
 
   .card {
-    padding: 28px 18px;
+    padding: 24px 16px;
     border-radius: 18px;
     backdrop-filter: blur(0.8px);
   }
@@ -784,27 +1142,27 @@ p {
   }
 
   h1 {
-    font-size: clamp(2rem, 10.4vw, 2.9rem);
+    font-size: clamp(1.8rem, 8.8vw, 2.5rem);
     line-height: 1.1;
   }
 
   h2 {
-    font-size: clamp(1.65rem, 8.2vw, 2.2rem);
-    margin-bottom: 18px;
+    font-size: clamp(1.45rem, 6.8vw, 1.95rem);
+    margin-bottom: 14px;
   }
 
   h3 {
-    font-size: clamp(1.2rem, 6vw, 1.6rem);
+    font-size: clamp(1.08rem, 5.2vw, 1.38rem);
   }
 
   p {
-    font-size: 0.98rem;
+    font-size: 0.92rem;
   }
 
   .hero-section {
     min-height: auto;
-    padding-top: 78px;
-    padding-bottom: 56px;
+    padding-top: 64px;
+    padding-bottom: 36px;
   }
 
   .hero-logo-wrap {
@@ -812,18 +1170,148 @@ p {
   }
 
   .hero-title {
-    font-size: clamp(1.65rem, 8.1vw, 2.2rem);
+    font-size: clamp(1.5rem, 7.2vw, 1.95rem);
     line-height: 1.06;
     letter-spacing: -0.15px;
   }
 
   .hero-logo {
-    width: clamp(150px, 58vw, 250px);
+    width: clamp(126px, 46vw, 190px);
+  }
+
+  .invitation-card {
+    padding: 12px;
+  }
+
+  .invitation-section {
+    padding-top: 18px;
+    padding-bottom: 42px;
+  }
+
+  .invitation-shell {
+    padding: 22px 14px 16px;
+  }
+
+  .invitation-heading {
+    margin-bottom: 14px;
+    font-size: 1.18rem;
+  }
+
+  .invitation-shell::before,
+  .invitation-shell::after {
+    inset: 10px;
+  }
+
+  .invitation-shell::after {
+    inset: auto 8px 8px 8px;
+    height: 12px;
+  }
+
+  .invitation-logo {
+    width: clamp(120px, 38vw, 160px);
+  }
+
+  .invitation-tag {
+    font-size: 1rem;
+  }
+
+  .invitation-family,
+  .invitation-ampersand,
+  .invitation-copy,
+  .invitation-venue-line,
+  .invitation-rsvp-title,
+  .invitation-rsvp-copy {
+    letter-spacing: 1.2px;
+  }
+
+  .invitation-family {
+    font-size: 0.68rem;
+  }
+
+  .invitation-ampersand {
+    font-size: 1.2rem;
+  }
+
+  .invitation-copy {
+    font-size: 0.68rem;
+    margin-bottom: 14px;
+  }
+
+  .invitation-name {
+    font-size: clamp(1.9rem, 11vw, 3rem);
+  }
+
+  .invitation-surname {
+    font-size: 0.86rem;
+  }
+
+  .invitation-and {
+    font-size: 1.05rem;
+  }
+
+  .invitation-date-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    max-width: 100%;
+  }
+
+  .invitation-date-panel {
+    padding: 10px 12px;
+    border-top: 1px solid rgba(23, 36, 28, 0.55);
+    border-bottom: 1px solid rgba(23, 36, 28, 0.55);
+  }
+
+  .invitation-date-panel::before,
+  .invitation-date-panel::after {
+    display: none;
+  }
+
+  .invitation-date-panel-main {
+    min-width: 0;
+    padding: 12px;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  .invitation-date-label,
+  .invitation-date-month,
+  .invitation-date-year {
+    font-size: 0.88rem;
+    letter-spacing: 2px;
+  }
+
+  .invitation-date-day {
+    font-size: 1.55rem;
+    letter-spacing: 2px;
+  }
+
+  .invitation-venue-line {
+    font-size: 0.76rem;
+  }
+
+  .invitation-rsvp-title {
+    font-size: 0.86rem;
+  }
+
+  .invitation-rsvp-copy {
+    font-size: 0.66rem;
+    line-height: 1.55;
+  }
+
+  .invitation-scripture-line {
+    font-size: 0.84rem;
+  }
+
+  .invitation-gift-banner {
+    margin: 0 -8px -8px;
+    padding: 9px 12px;
+    font-size: 0.68rem;
+    letter-spacing: 0.4px;
   }
 
   .hero-kicker {
-    font-size: 0.95rem;
-    letter-spacing: 0.7px;
+    font-size: 0.85rem;
+    letter-spacing: 0.4px;
     margin-bottom: 12px;
   }
 
@@ -833,13 +1321,18 @@ p {
   }
 
   .btn {
-    padding: 12px 20px;
-    font-size: 0.95rem;
+    padding: 11px 18px;
+    font-size: 0.88rem;
     max-width: 100%;
   }
 
   .details-heading {
     margin-bottom: 28px;
+  }
+
+  .countdown-section {
+    padding-top: 16px;
+    padding-bottom: 52px;
   }
 
   .donation-heading {
@@ -857,7 +1350,7 @@ p {
   }
 
   .donation-message {
-    font-size: 1rem;
+    font-size: 0.94rem;
     line-height: 1.4;
   }
 
@@ -887,11 +1380,11 @@ p {
   }
 
   .venue-title {
-    font-size: clamp(1.35rem, 6.6vw, 1.82rem);
+    font-size: clamp(1.2rem, 5.4vw, 1.55rem);
   }
 
   .venue-location {
-    font-size: 0.95rem;
+    font-size: 0.88rem;
     margin-bottom: 14px;
   }
 
@@ -926,7 +1419,7 @@ p {
   }
 
   .venue-date {
-    font-size: 0.92rem;
+    font-size: 0.84rem;
   }
 
   .venue-btn {
@@ -935,10 +1428,30 @@ p {
   }
 
   .colors-subtitle,
-  .rsvp-subtitle {
-    font-size: 0.96rem;
-    margin-bottom: 22px;
+  .rsvp-subtitle,
+  .countdown-subtitle {
+    font-size: 0.88rem;
+    margin-bottom: 18px;
     max-width: 95%;
+  }
+
+  .countdown-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .countdown-item {
+    padding: 12px 8px;
+    border-radius: 14px;
+  }
+
+  .countdown-value {
+    font-size: clamp(1.35rem, 7vw, 1.8rem);
+  }
+
+  .countdown-label {
+    font-size: 0.64rem;
+    margin-top: 8px;
   }
 
   .palette-grid {
@@ -962,11 +1475,11 @@ p {
   }
 
   .rsvp-name {
-    font-size: 1rem;
+    font-size: 0.94rem;
   }
 
   .rsvp-role {
-    font-size: 0.82rem;
+    font-size: 0.76rem;
   }
 
   .rsvp-call {
@@ -982,7 +1495,7 @@ p {
   }
 
   .scripture-quote {
-    font-size: clamp(1.04rem, 4.9vw, 1.3rem);
+    font-size: clamp(0.96rem, 4.2vw, 1.14rem);
     line-height: 1.6;
   }
 
