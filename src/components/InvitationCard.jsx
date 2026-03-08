@@ -11,7 +11,7 @@ export default function InvitationCard() {
       >
         <span className="invitation-download-cta-title">Download Invitation</span>
         <span className="invitation-download-cta-arrow" aria-hidden="true">
-          -&gt;
+          →
         </span>
       </a>
     </section>

@@ -1,6 +1,6 @@
 export default function Details() {
   return (
-    <section className="section details-section">
+    <section className="section details-section" id="details">
       <h2 className="details-heading">Wedding Venue</h2>
 
       <div className="card venue-card">
@@ -28,18 +28,6 @@ export default function Details() {
           </div>
         </div>
 
-        <div className="venue-divider" />
-
-        <div className="venue-time-row">
-          <span className="venue-time-icon" aria-hidden="true">
-            {"\uD83D\uDCC5"}
-          </span>
-          <div className="venue-time-copy">
-            <span className="venue-date">Please join us at 11:00 AM for the wedding ceremony.</span>
-          </div>
-        </div>
-
-        <br />
         <a
           className="btn btn-outline venue-btn"
           href="https://www.google.com/maps/search/?api=1&query=Prove+Jesus+Alive+Ministry+Adjacent+Ebenezer+School+Taifa+Accra+Ghana"

@@ -1,6 +1,6 @@
 export default function GiftDonation() {
   return (
-    <section className="section donation-section">
+    <section className="section donation-section" id="gift">
       <h2 className="donation-heading">Gift Donation</h2>
 
       <div className="card donation-card">

@@ -5,7 +5,7 @@ export default function Scripture() {
         {"\u2661 \u2726 \u2661"}
       </div>
 
-      <h2 style={{ color: "white" }}>Scripture</h2>
+      <h2>Scripture</h2>
 
       <div style={{ maxWidth: "600px", margin: "0 auto" }}>
         <p className="scripture-quote">"We enjoy a canopy of cedars enclosed by cypresses, fragrant and green."</p>

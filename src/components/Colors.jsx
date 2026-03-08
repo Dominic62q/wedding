@@ -2,8 +2,8 @@ export default function Colors() {
   const palette = [
     {
       name: "Ivory",
-      hex: "#FFFFF0",
-      border: "#e5e7de",
+      hex: "#F0E0C0",
+      border: "#c8ad8a",
       meaning: "Purity, elegance, and new beginnings.",
     },
     {

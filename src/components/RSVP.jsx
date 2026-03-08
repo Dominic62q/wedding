@@ -10,16 +10,12 @@ export default function RSVP() {
       <h2>R.S.V.P</h2>
       <p className="rsvp-subtitle">Kindly confirm your presence by calling our RSVP contacts:</p>
 
-      <div className="card rsvp-card" style={{ padding: "0" }}>
+      <div className="card rsvp-card">
         {contacts.map((contact, index) => (
-          <div
-            key={index}
-            className="rsvp-row"
-            style={{ borderBottom: index !== contacts.length - 1 ? "1px solid #f0f0f0" : "none" }}
-          >
-            <div style={{ textAlign: "left" }}>
+          <div key={index} className="rsvp-row">
+            <div className="rsvp-info">
               <div className="rsvp-name">{contact.name}</div>
-              <div className="rsvp-role">RSVP</div>
+              <div className="rsvp-number">{contact.number}</div>
             </div>
 
             <a href={`tel:${contact.number}`} className="rsvp-call" aria-label={`Call ${contact.name}`}>
