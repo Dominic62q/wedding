@@ -127,6 +127,10 @@ a {
   overflow: hidden;
 }
 
+.section[id]:not(#top) {
+  scroll-margin-top: 92px;
+}
+
 .section.will-animate {
   opacity: 0;
   transform: translateY(28px);
