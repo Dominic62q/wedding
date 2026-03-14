@@ -4,9 +4,8 @@ export default function GiftDonation() {
       <h2 className="donation-heading">Gift Donation</h2>
 
       <div className="card donation-card">
-        <p className="donation-kicker">In lieu of gifts</p>
         <p className="donation-message">
-          We would appreciate it if you bless us with a cash gift.
+          In lieu of gifts, we would appreciate it if you bless us with a cash gift.
         </p>
 
         <div className="donation-divider" />
